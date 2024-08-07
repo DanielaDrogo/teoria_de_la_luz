@@ -1,0 +1,313 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+
+
+/*HEADER*/
+
+header{
+    background-color: #320081;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-inline: 20px;
+    
+    
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    padding-right: 30px;
+}
+
+ul li{
+    padding: 10px;
+    display: inline;
+        
+}
+
+.header_link{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: sans-serif;
+
+}
+
+#toggle{
+    display: none;
+}
+
+#label_toggle{
+    font-size: 35px;
+    color: violet;
+    cursor: pointer;
+}
+
+/*-----*/
+
+
+
+/*INICIO*/
+
+main{
+    background-image: url("../imagenes/galaxeas_de_fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 100px;
+    transition: all 0.5s ease;
+    
+}
+
+
+
+
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size:60px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.indiceYtexto{
+    display: flex;
+    width: 90%;
+}
+
+.indice_lateral{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.caja-indice{
+    background-color: #f5f5f5c0;
+    width: 250px;
+    height: 540px;
+    padding: 1%;
+    margin-right: 40px;
+    position: sticky;
+    top: 30px;
+    overflow-y: scroll
+
+}
+
+
+
+
+.contenedor_indiceTexto{
+    display: flex;
+    justify-content: center;
+}
+
+
+.textoYflechas{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 70%;
+    
+}
+
+.pag{
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+.caja-de-texto{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.flechas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: auto;
+}
+
+.flechas img{
+    margin: 25px;
+    margin-inline: 100px;
+    width: 100px;
+    height: 65px;
+    
+}
+
+.flecha-derecha:hover{
+    -webkit-box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73);
+    -moz-box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73);
+    box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73); 
+
+}
+
+.flecha-izquierda:hover{
+    -webkit-box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73);
+    -moz-box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73);
+    box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73); 
+
+}
+
+/*-----*/
+
+/*PAGINA INDICE*/
+
+.main_indice{
+    background-image: url("https://article-imgs.scribdassets.com/7z6x6sjz9c9p1nq2/images/fileSJ3L9BF4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.caja-seleccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seleccion{
+    background-color: whitesmoke;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+}
+
+.seleccion:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 55px 1px rgba(156,43,255,1);
+    -moz-box-shadow: 0px 0px 55px 1px rgba(156,43,255,1);
+    box-shadow: 0px 0px 55px 1px rgba(156,43,255,1);}
+
+/*-----*/
+
+/*SOBRE EL AUTOR*/
+
+.biografia{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    margin-inline: 8%;
+    text-align: center;
+    padding: 20px;
+}
+
+/*-----*/
+
+
+
+/*MODO DARK*/
+
+.dark{
+    background-color: #1f1f1f;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+    
+}
+
+.dark_header{
+    background-color: #11002c;
+}
+
+.dark_main{
+    background-image: url("../imagenes/galaxeas_de_fondo_dark.jpg");
+}
+
+/*-----*/
+
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: #6000b9;
+    color: wheat;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+/*MODO DARK*/
+
+.dark{
+    background-color: #1f1f1f;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+}
+
+.dark_header{
+    background-color: #11002c;
+}
+
+.dark_main{
+    background-image: url("../imagenes/galaxeas_de_fondo_dark.jpg");
+}
+
+.dark_footer{
+    background-color: #2a0035;
+}
+
+.dark_link{
+    color: violet;
+}
+/*-----*/
+
+
+
+
+
+@media (max-width:700px){
+
+    body{
+        width: 56vh;
+    }
+
+    header{
+        position: fixed;
+        height: 70px;
+    }
+
+    h1{
+        padding-top: 100px;
+    }
+
+    .caja-indice{
+        width: 0px;
+        height: 0px;
+        position: static;
+    }
+
+    .indiceYtexto{      
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .textoYflechas{
+        width: auto;
+    }
+
+    .flechas img{
+        margin: 25px;
+        margin-inline: 40px;
+        width: 90px;
+        height: 60px;
+        
+    }
+
+}
