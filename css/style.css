@@ -275,13 +275,13 @@ footer{
 @media (max-width:700px){
 
     body{
-        width: 56vh;
+        width: 50vh;
     }
 
     header{
         position: fixed;
         height: 70px;
-        width: 49vh;
+        width: 45vh;
     }
 
     h1{
