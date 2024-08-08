@@ -68,12 +68,11 @@ main{
 }
 
 
-
-
 h1{
     color: white;
     display: flex;
     justify-content: center;
+    text-align: center;
     padding: 50px;
     font-size:60px;
     font-family: 'Roboto', sans-serif;
@@ -317,18 +316,6 @@ footer{
 
     /*INDICE*/
 
-
-
-
-    .main_indice{
-        background-image: url("https://article-imgs.scribdassets.com/7z6x6sjz9c9p1nq2/images/fileSJ3L9BF4.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-bottom: 100px;
-    }
-    
-
-
     .dos-selecciones{
         display: flex; 
     }
@@ -342,8 +329,8 @@ footer{
     
     .seleccion{
         background-color: whitesmoke;
-        width: 180px;
-        height: 180px;
+        width: 170px;
+        height: 170px;
         margin: 5px;
     }
 
