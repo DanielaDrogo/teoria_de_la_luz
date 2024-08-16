@@ -169,9 +169,9 @@ h1{
 /*PAGINA INDICE*/
 
 .main_indice{
-    background-image: url("https://article-imgs.scribdassets.com/7z6x6sjz9c9p1nq2/images/fileSJ3L9BF4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url("../imagenes/galaxeas_de_fondo.jpg"); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     padding-bottom: 100px;
 }
 
@@ -271,6 +271,10 @@ footer{
 .dark_link{
     color: violet;
 }
+
+
+
+
 /*-----*/
 
 
