@@ -16,7 +16,6 @@ header{
     justify-content:space-between;
     padding-inline: 20px;
     
-    
 }
 
 .logo{
@@ -95,6 +94,11 @@ h1{
     
 }
 
+.sub_indice_link{
+    display: none;
+    flex-direction: column;
+}
+
 .caja-indice{
     background-color: #f5f5f5c0;
     width: 250px;
@@ -106,6 +110,16 @@ h1{
     overflow-y: scroll
 
 }
+
+nav li a:hover{
+    color: #ff00ea;
+}
+
+nav li:hover > ul{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
@@ -280,13 +294,16 @@ footer{
 /*-----*/
 
 
-
+.caja_menu{
+    position:fixed;
+}
 
 
 @media (max-width:700px){
 
+    
+
     .menu-hamburguesa {
-        position: relative;
         display: inline-block;
     }
       
@@ -302,7 +319,7 @@ footer{
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #ffffff;
+        background-color: #d10000;
         transition: all 0.3s ease;
     }
       
