@@ -62,7 +62,8 @@ ul li{
 main{
     background-image: url("../imagenes/galaxeas_de_fondo.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    background-attachment: fixed ;
     padding-left: 0%;
     padding-right: 0%;
     padding-bottom: 100px;
@@ -138,17 +139,24 @@ nav li:hover > ul{
     
 }
 
+.caja-de-texto{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    
+}
+
 .pag{
     text-align: right;
     font-family: 'Roboto', sans-serif;
 }
 
-.caja-de-texto{
-    background-color: whitesmoke;
-    text-align: center;
-    padding: 10px;
-    
+.ilustracion{
+    width: 90%;
+    height: auto;
+    margin: 20px;
 }
+
 
 .flechas{
     display: flex;
