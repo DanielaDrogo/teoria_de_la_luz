@@ -28,9 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Aplicar la preferencia guardada en el local storage
-    if (darkMode) {
-        applyDarkMode(true);
-    }
+    applyDarkMode(darkMode);
 
     if (toggle && label_toggle) {
         toggle.checked = darkMode; // Asegurarse de que el toggle refleje la preferencia almacenada
