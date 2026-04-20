@@ -1,5 +1,5 @@
 
-
+// MODO OSCURO
 
 document.addEventListener('DOMContentLoaded', () => {
     let toggle = document.getElementById('toggle');
@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
+
+// MENU AMBURGEZA
 
 
 

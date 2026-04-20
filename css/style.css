@@ -310,7 +310,7 @@ footer{
 
     
 
-    .menu-hamburguesa {
+    /* .menu-hamburguesa {
         display: inline-block;
     }
       
@@ -345,7 +345,7 @@ footer{
       
     #menu-toggle {
         display: none;
-    }
+    } 
       
     #menu-toggle:checked + .menu-icon span:nth-child(1) {
         transform: translateY(50%) rotate(45deg);
@@ -371,10 +371,10 @@ footer{
       
     #menu-toggle:checked + .menu-icon + .menu {
         display: block;
-    }
+    } */
       
 
-
+    
 
 
 
@@ -398,10 +398,11 @@ footer{
     }
 
     .caja-indice{
-        width: 0px;
-        height: 0px;
-        position: static;
+        width: 90%; 
+        /* height: 0px; */
+        /* position: static; */
         padding: 0px;
+        top: 70px;
     }
 
     .indiceYtexto{      
@@ -413,13 +414,7 @@ footer{
         width: auto;
     }
 
-    .flechas img{
-        margin: 25px;
-        margin-inline: 40px;
-        width: 90px;
-        height: 60px;
-        
-    }
+    
 
     /*INDICE*/
 
