@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         label_toggle.style.color = enabled ? "gold" : "violet";
 
         document.querySelector('.caja-indice')?.classList.toggle('dark', enabled);
-        document.querySelector('.caja-de-texto')?.classList.toggle('dark', enabled);
+        document.querySelector('.CajaDeTexto-2')?.classList.toggle('dark', enabled);
         document.querySelector('.biografia')?.classList.toggle('dark', enabled);
         document.querySelector('header')?.classList.toggle('dark_header', enabled);
         document.querySelector('main')?.classList.toggle('dark_main', enabled);

@@ -100,7 +100,7 @@ h1{
 }
 
 .caja-indice{
-    background-color: #f5f5f5c0;
+    background-color: #f5f5f5de;
     width: 250px;
     height: 540px;
     padding: 1%;
@@ -125,7 +125,7 @@ nav li:hover > ul{
 }
 
 
-.textoYflechas{
+.CajaDeTexto{
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -133,7 +133,7 @@ nav li:hover > ul{
     
 }
 
-.caja-de-texto{
+.CajaDeTexto-2{
     background-color: whitesmoke;
     text-align: center;
     padding: 20px;
@@ -222,7 +222,6 @@ footer{
 
 /* MENU DESPLEGABLE*/
 
-
 #abrir-menu, #cerrar-menu{
     display: none;
     top:70px;
@@ -231,12 +230,7 @@ footer{
 
 /*-----*/
 
-
-
 @media (max-width:700px){
-
-   
-
 
     body{
         width: 50vh;
@@ -287,45 +281,20 @@ footer{
         position: none;
     }
 
-
     .visible {
         opacity: 1;
         visibility: visible;
     }
-
-    /* .indice_lateral{
-        padding-top: 10px;
-    } */
 
     .indiceYtexto{      
         display: flex;
         flex-direction: column;
     }
     
-    .textoYflechas{
+    .CajaDeTexto{
         width: auto;
     }
 
-    /*INDICE*/
-
-    .dos-selecciones{
-        display: flex; 
-    }
-    
-    .caja-seleccion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .seleccion{
-        background-color: whitesmoke;
-        width: 170px;
-        height: 170px;
-        margin: 5px;
-    }
-
-    
+   
 
 }
