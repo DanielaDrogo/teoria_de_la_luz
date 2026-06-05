@@ -267,13 +267,13 @@ footer{
         color: darkviolet;
         background-color: transparent;
         font-size: 35px;
-        pointer-events: stroke;
+        
     }
 
     #abrir-menu{
         position: sticky;
         overflow-y: scroll;
-        top: 70px;
+        top: 75px;
         z-index: 1;
     }
 

@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const menu = document.querySelector('.caja-indice');
 const botonCerrar = document.querySelector('#cerrar-menu');
 const botonAbrir = document.querySelector('#abrir-menu');
+const seleccionarEnlaces = document.querySelectorAll('.indice_link');
 
 botonAbrir.addEventListener('click', () => {
     menu.classList.add('visible');
@@ -59,5 +60,10 @@ botonCerrar.addEventListener('click', () => {
 });
 
 
+seleccionarEnlaces.forEach(enlace => {
+    enlace.addEventListener('click', () => {
+        menu.classList.remove('visible');
+    });
+});
 
 
