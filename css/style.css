@@ -57,7 +57,7 @@ ul li{
 
 
 
-/*INICIO*/
+/*MAIN*/
 
 main{
     background-image: url("../imagenes/galaxeas_de_fondo.jpg");
@@ -108,7 +108,6 @@ h1{
     position: sticky;
     top: 30px;
     overflow-y: scroll
-
 }
 
 nav li a:hover{
@@ -119,10 +118,6 @@ nav li:hover > ul{
     display: flex;
     flex-direction: column;
 }
-
-
-
-
 
 .contenedor_indiceTexto{
     display: flex;
@@ -157,82 +152,7 @@ nav li:hover > ul{
 }
 
 
-.flechas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    width: auto;
-}
 
-.flechas img{
-    margin: 25px;
-    margin-inline: 100px;
-    width: 100px;
-    height: 65px;
-    
-}
-
-.flecha-derecha:hover{
-    -webkit-box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73);
-    -moz-box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73);
-    box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73); 
-
-}
-
-.flecha-izquierda:hover{
-    -webkit-box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73);
-    -moz-box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73);
-    box-shadow: inset 0px 0px 171px -29px rgba(64,255,0,0.73); 
-
-}
-
-/*-----*/
-
-/*PAGINA INDICE*/
-
-.main_indice{
-    /* background-image: url("../imagenes/galaxeas_de_fondo.jpg"); */
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-    padding-bottom: 100px;
-}
-
-.dos-selecciones{
-    display: flex;
-}
-
-.caja-seleccion{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.seleccion{
-    background-color: whitesmoke;
-    width: 250px;
-    height: 250px;
-    margin: 20px;
-}
-
-.seleccion:hover{
-    cursor: pointer;
-    -webkit-box-shadow: 0px 0px 55px 1px rgba(156,43,255,1);
-    -moz-box-shadow: 0px 0px 55px 1px rgba(156,43,255,1);
-    box-shadow: 0px 0px 55px 1px rgba(156,43,255,1);}
-
-/*-----*/
-
-/*SOBRE EL AUTOR*/
-
-.biografia{
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    margin-inline: 8%;
-    text-align: center;
-    padding: 20px;
-}
 
 /*-----*/
 
@@ -268,7 +188,8 @@ footer{
     padding: 5px;
     text-align: center;
 }
-
+ 
+/*-----*/
 
 
 /*MODO DARK*/
@@ -294,89 +215,27 @@ footer{
 .dark_link{
     color: violet;
 }
+/*-----*/
 
 
 
+
+/* MENU DESPLEGABLE*/
+
+
+#abrir-menu, #cerrar-menu{
+    display: none;
+    top:70px;
+
+}
 
 /*-----*/
 
 
-.caja_menu{
-    position:fixed;
-}
-
 
 @media (max-width:700px){
 
-    
-
-    /* .menu-hamburguesa {
-        display: inline-block;
-    }
-      
-    .menu-icon {
-        position: relative;
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-    }
-      
-    .menu-icon span {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #d10000;
-        transition: all 0.3s ease;
-    }
-      
-    .menu-icon span:nth-child(1) {
-        top: 0;
-    }
-      
-    .menu-icon span:nth-child(2) {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-      
-    .menu-icon span:nth-child(3) {
-        bottom: 0;
-    }
-      
-    #menu-toggle {
-        display: none;
-    } 
-      
-    #menu-toggle:checked + .menu-icon span:nth-child(1) {
-        transform: translateY(50%) rotate(45deg);
-    }
-      
-    #menu-toggle:checked + .menu-icon span:nth-child(2) {
-        opacity: 0;
-    }
-      
-    #menu-toggle:checked + .menu-icon span:nth-child(3) {
-        transform: translateY(-50%) rotate(-45deg);
-    }
-      
-    .menu {
-        position: absolute;
-        top: 195%;
-        right: -20px;
-        background-color: #f9f9f9;
-        padding: 20px;
-        border: 1px solid #ddd;
-        display: none;
-    }
-      
-    #menu-toggle:checked + .menu-icon + .menu {
-        display: block;
-    } */
-      
-
-    
-
-
+   
 
 
     body{
@@ -399,11 +258,44 @@ footer{
 
     .caja-indice{
         width: 90%; 
-        /* height: 0px; */
-        /* position: static; */
         padding: 0px;
         top: 70px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10;
     }
+
+    #abrir-menu, #cerrar-menu{
+        display: flex;
+        width: fit-content;
+        margin: 10px;
+        border: none;
+        color: darkviolet;
+        background-color: transparent;
+        font-size: 35px;
+        pointer-events: stroke;
+    }
+
+    #abrir-menu{
+        position: sticky;
+        overflow-y: scroll;
+        top: 70px;
+        z-index: 1;
+    }
+
+    #cerrar-menu{
+        position: none;
+    }
+
+
+    .visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* .indice_lateral{
+        padding-top: 10px;
+    } */
 
     .indiceYtexto{      
         display: flex;
@@ -413,8 +305,6 @@ footer{
     .textoYflechas{
         width: auto;
     }
-
-    
 
     /*INDICE*/
 
@@ -435,5 +325,7 @@ footer{
         height: 170px;
         margin: 5px;
     }
+
+    
 
 }

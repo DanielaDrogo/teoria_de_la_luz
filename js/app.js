@@ -1,5 +1,5 @@
 
-// MODO OSCURO
+// MODO OSCURO //
 
 document.addEventListener('DOMContentLoaded', () => {
     let toggle = document.getElementById('toggle');
@@ -44,9 +44,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// MENU AMBURGEZA
+// MENU AMBURGEZA //
 
+const menu = document.querySelector('.caja-indice');
+const botonCerrar = document.querySelector('#cerrar-menu');
+const botonAbrir = document.querySelector('#abrir-menu');
 
+botonAbrir.addEventListener('click', () => {
+    menu.classList.add('visible');
+});
+
+botonCerrar.addEventListener('click', () => {
+    menu.classList.remove('visible');
+});
 
 
 
