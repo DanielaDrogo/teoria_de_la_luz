@@ -15,7 +15,6 @@ header{
     align-items: center;
     justify-content:space-between;
     padding-inline: 20px;
-    
 }
 
 .logo{
@@ -26,8 +25,7 @@ header{
 
 ul li{
     padding: 10px;
-    display: inline;
-        
+    display: inline;     
 }
 
 .header_link{
@@ -36,7 +34,6 @@ ul li{
     font-weight: bolder;
     font-size: larger;
     font-family: sans-serif;
-
 }
 
 #toggle{
@@ -79,7 +76,6 @@ h1{
     padding: 50px;
     font-size:60px;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .indiceYtexto{
@@ -91,7 +87,6 @@ h1{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    
 }
 
 .sub_indice_link{
@@ -130,14 +125,12 @@ nav li:hover > ul{
     flex-direction:column;
     align-items: center;
     width: 70%;
-    
 }
 
 .CajaDeTexto-2{
     background-color: whitesmoke;
     text-align: center;
     padding: 20px;
-    
 }
 
 .pag{
@@ -164,7 +157,6 @@ nav li:hover > ul{
     background-color: #1f1f1f;
     color: whitesmoke;
     transition: all 0.5s ease;
-    
 }
 
 .dark_header{
@@ -188,7 +180,15 @@ footer{
     padding: 5px;
     text-align: center;
 }
- 
+
+footer a{
+    color: #f5b3b3;
+}
+
+footer a:hover{
+    color: #fd6aa7
+}
+
 /*-----*/
 
 
@@ -225,7 +225,6 @@ footer{
 #abrir-menu, #cerrar-menu{
     display: none;
     top:70px;
-
 }
 
 /*-----*/
@@ -264,9 +263,10 @@ footer{
         width: fit-content;
         margin: 10px;
         border: none;
-        color: darkviolet;
+        color: #ff00d4;
         background-color: transparent;
         font-size: 35px;
+        cursor: pointer;
         
     }
 
@@ -275,6 +275,7 @@ footer{
         overflow-y: scroll;
         top: 75px;
         z-index: 1;
+        
     }
 
     #cerrar-menu{
