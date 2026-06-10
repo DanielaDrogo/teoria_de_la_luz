@@ -151,27 +151,6 @@ nav li:hover > ul{
 
 
 
-/*MODO DARK*/
-
-.dark{
-    background-color: #1f1f1f;
-    color: whitesmoke;
-    transition: all 0.5s ease;
-}
-
-.dark_header{
-    background-color: #11002c;
-}
-
-.dark_main{
-    background-image: url("../imagenes/galaxeas_de_fondo_dark.jpg");
-}
-
-/*-----*/
-
-
-
-
 /*FOOTER*/
 
 footer{
@@ -215,6 +194,8 @@ footer a:hover{
 .dark_link{
     color: violet;
 }
+
+
 /*-----*/
 
 
@@ -232,13 +213,16 @@ footer a:hover{
 @media (max-width:700px){
 
     body{
-        width: 50vh;
+        width: 100%;
+        max-width: 100%
     }
 
     header{
         position: fixed;
         height: 70px;
-        width: 45vh;
+        width: 92%;
+        /* width: 100% */
+        max-width: 100%;
     }
 
     header ul{
