@@ -78,6 +78,48 @@ h1{
     font-family: 'Roboto', sans-serif;
 }
 
+
+
+
+
+/* Contenedor principal del banner */
+.banner-publicitario {
+    max-width: 728px; /* Tamaño estándar de banner (Leaderboard), no ocupará más de esto */
+    margin: 30px auto; /* Separa el banner del texto superior e inferior y lo centra */
+    padding: 10px;
+    background-color: #f9f9f9; /* Un fondo gris muy sutil para delimitarlo */
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    text-align: center; /* Centra la imagen y la etiqueta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra casi invisible */
+}
+
+/* Pequeño texto indicador de publicidad */
+.etiqueta-ads {
+    display: block;
+    font-size: 11px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+/* Ajuste de la imagen para que sea responsiva (se adapte a celulares) */
+.imagen-banner {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+/*-----*/
+
+
+
+
+
+
+
 .indiceYtexto{
     display: flex;
     width: 90%;
@@ -263,7 +305,7 @@ footer a:hover{
     }
 
     #cerrar-menu{
-        position: none;
+        position: static;
     }
 
     .visible {
