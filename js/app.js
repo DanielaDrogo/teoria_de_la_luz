@@ -1,6 +1,4 @@
-
 // MODO OSCURO //
-
 document.addEventListener('DOMContentLoaded', () => {
     let toggle = document.getElementById('toggle');
     let label_toggle = document.getElementById('label_toggle');
@@ -20,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('header')?.classList.toggle('dark_header', enabled);
         document.querySelector('main')?.classList.toggle('dark_main', enabled);
         document.querySelector('footer')?.classList.toggle('dark_footer', enabled);
-
         // Cambia el color del link
         document.querySelectorAll('.indice_link').forEach(enlace => {
             enlace.classList.toggle('dark_link', enabled);
@@ -35,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         toggle.addEventListener('change', (event) => {
             let checked = event.target.checked;
             applyDarkMode(checked);
-
             // Guardar la preferencia en el local storage
             localStorage.setItem('darkMode', checked);
         });
@@ -43,9 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 // MENU AMBURGEZA //
-
 const menu = document.querySelector('.caja-indice');
 const botonCerrar = document.querySelector('#cerrar-menu');
 const botonAbrir = document.querySelector('#abrir-menu');
@@ -59,11 +53,8 @@ botonCerrar.addEventListener('click', () => {
     menu.classList.remove('visible');
 });
 
-
 seleccionarEnlaces.forEach(enlace => {
     enlace.addEventListener('click', () => {
         menu.classList.remove('visible');
     });
 });
-
-

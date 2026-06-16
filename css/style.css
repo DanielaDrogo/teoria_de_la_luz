@@ -67,7 +67,6 @@ main{
     transition: all 0.5s ease;
 }
 
-
 h1{
     color: white;
     display: flex;
@@ -186,9 +185,6 @@ nav li:hover > ul{
     margin: 20px;
 }
 
-
-
-
 /*-----*/
 
 
@@ -242,7 +238,6 @@ footer a:hover{
 
 
 
-
 /* MENU DESPLEGABLE*/
 
 #abrir-menu, #cerrar-menu{
@@ -263,7 +258,6 @@ footer a:hover{
         position: fixed;
         height: 70px;
         width: 92%;
-        /* width: 100% */
         max-width: 100%;
     }
 
@@ -293,7 +287,6 @@ footer a:hover{
         background-color: transparent;
         font-size: 35px;
         cursor: pointer;
-        
     }
 
     #abrir-menu{
@@ -301,7 +294,6 @@ footer a:hover{
         overflow-y: scroll;
         top: 75px;
         z-index: 1;
-        
     }
 
     #cerrar-menu{
@@ -321,7 +313,4 @@ footer a:hover{
     .CajaDeTexto{
         width: auto;
     }
-
-   
-
 }
