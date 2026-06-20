@@ -21,6 +21,7 @@ header{
     width: 60px;
     height: 60px;
     padding-right: 30px;
+    cursor: pointer;
 }
 
 ul li{
