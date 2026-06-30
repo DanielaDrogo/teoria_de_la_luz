@@ -91,6 +91,7 @@ h1{
     border-radius: 4px; /* Bordes ligeramente redondeados */
     text-align: center; /* Centra la imagen y la etiqueta */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra casi invisible */
+    display: none;
 }
 
 /* Pequeño texto indicador de publicidad */
